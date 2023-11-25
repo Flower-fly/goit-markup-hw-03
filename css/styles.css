@@ -1,16 +1,67 @@
-/*Settings*/
+/*==============SETTINGS=============*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+} 
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400; 
     color:  #434455;
     background: #FFF;
 }
-ul, ol {
-    list-style-type: none;
+
+.container {
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
 }
-a {text-decoration: none;}
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+/*=======HEADER=========*/
 
-
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
+}
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.page-navigation {
+    display: flex;
+}
+.menu {
+    display: flex;
+    gap: 40px;
+}
 .logo {
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
@@ -19,6 +70,7 @@ a {text-decoration: none;}
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
+        margin-right: 76px;
 }
 .secondary-logo {
     font-family: 'Raleway', sans-serif;
@@ -43,7 +95,10 @@ a {text-decoration: none;}
 .contact {
     font-style: normal;
 }
-
+.contact-list {
+        display: flex;
+        column-gap: 40px;
+}
 .contact-list-link {
     font-size: 16px;
     line-height: 1.5;
@@ -56,10 +111,13 @@ a {text-decoration: none;}
     color: #404BBF;
 }
 
+/*=====SECTION 0============*/
 
 .title {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
+
 
 .page-title {
         text-align: center;
@@ -68,8 +126,12 @@ a {text-decoration: none;}
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: #FFF;
+        width: 496px;
+        margin: 0 auto 48px;
+    
 }
 .page-button {
+    display: block;
     font-family: inherit;
         font-size: 16px;
         font-weight: 500;
@@ -78,10 +140,33 @@ a {text-decoration: none;}
         color: #FFF;
     background:#4D5AE5;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 .page-button:hover,
 .page-button:focus {
     background-color: #404BBF ;
+}
+
+/*==========SECTION 1============*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.benefits-list {
+    display: flex;
+    column-gap: 24px;
 }
 .benefits {
         font-size: 20px;
@@ -89,13 +174,17 @@ a {text-decoration: none;}
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
+        margin-bottom: 8px;
 }
 .benefits-text {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        width: 264px;
 }
-/*Section2*/
+
+/*=================SECTION 2============*/
+
 .main-team {
     background-color: #F4F4FD;
 }
@@ -108,28 +197,74 @@ a {text-decoration: none;}
         letter-spacing: 0.02em;
         text-transform: capitalize;
             color: #2E2F42;
+            margin-bottom: 72px;
+}
+.secondary-title-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
 }
 .subtitle {
  
+    text-align: center;
+        padding-top: 32px;
+        padding-bottom: 8px;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2E2F42;
+      
 }
 .subtitle-text {
 
+    text-align: center;
+    padding-bottom: 32px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
 }
+.secondary-title-list-team-item {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100%)-72px)/4;
+}
+
+/*==============SECTION3==========*/
 .secondary-title-list-item {
     background-color: #FFFFFF;
 }
-/*Footer*/
+
+.subtitle-portfolio {
+
+    padding-top: 32px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+
+}
+.subtitle-text-portfolio {
+ padding-bottom: 32px;
+ padding-left: 16px;
+ padding-right: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/*==============FOOTER==========*/
+
 .advertising {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-logo {
 
@@ -143,6 +278,8 @@ a {text-decoration: none;}
 }
 .advertising-text {
         font-size: 16px;
+        width: 264px;
+        margin-top: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
             color: #F4F4FD;
